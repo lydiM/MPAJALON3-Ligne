@@ -3,22 +3,18 @@
 <head>
 
 	<link rel="stylesheet" href="https://openlayers.org/en/v4.4.2/css/ol.css" type="text/css">
-	<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
 	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
 	<script src="https://openlayers.org/en/v4.4.2/build/ol.js"></script>
 
 </head>
 
 <body>
-
 	<!--Déclaration du conteneur pour la carte-->
 	<div id="map" style="width: 1000px; height: 400px"></div>
 	<div id="mouse-position"></div>
 
   <!---->
 	<form name='formu'>
-		<label>Latitude </label>: <input id="lat" type="text" name="latitude" /> <!--Champs pour saisir le premier angle-->
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 		<br/>
 	<label>Pour dessiner la ligne</label> : <input type='button' onClick='dessin()' value='Cliquez ici' >
@@ -29,9 +25,6 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 		<label>Distance en miles</label>: <input id="dist" type="text" name="distance" />
-
-		<!--<input type="number" />-->
-  <!-- <input type="color" />-->
 
 	</form>
 <br/>
@@ -47,15 +40,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input id="opacite" type="range" min="0" max="1" step="0.1"  >
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- <input id="epai" type="number" />
+ <input id="epaisseur" type="number" />
 
   <script type="text/javascript" src="fctLigne.js"> </script>
 	<script type="text/javascript" src="fctStyle.js"> </script>
 	<script type="text/javascript" src="ligne.js"> </script>
-		<!-- <script type="text/javascript" src="arc.js"> </script> -->
     <div id="docs">
         <p></p>
-
 
     </div>
 </body>
