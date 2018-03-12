@@ -42,7 +42,7 @@ function addInteraction() {
   draw = new ol.interaction.Draw({
     source: source,
     type: (value),
-    geometryFunction: geometryFunction,
+    geometryFunction: dessinLigne,
   });
 
   map.addInteraction(draw);

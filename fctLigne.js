@@ -1,4 +1,6 @@
-var geometryFunction = function(coordinate,  ligne) {
+
+// fonction de dessin de la ligne de mesure
+var dessinLigne = function(coordinate,  ligne) {
 if ( !ligne) {
  ligne = new ol.geom.Polygon(0);
 }
@@ -29,4 +31,4 @@ newCoordinates.push([point[0] , point[1] ], [last[0], last[1]]);
 
   return  ligne;
 
-}; //End geometryFunction
+}; //End dessinLigne
